@@ -391,7 +391,10 @@ function Main() {
                 <div className="d-grid gap-3 mt-4">
                   {
                     (Object.entries(archivo[0]).length === 0) || (Object.entries(archivo[1]).length === 0) ? (
+                      <>
                       <button className='btn btn-lg' style={{backgroundColor: "#3366CC", color:"white"}}  disabled>Guardar</button>
+                      <button className='btn btn-lg' style={{backgroundColor: "#3366CC", color:"white"}}  onClick={()=>handleForm(3)}>Anterior</button>
+                      </>
                     ) : disabledButtons === 0 ? (
                       <>
                       <button className='btn btn-lg' style={{backgroundColor: "#3366CC", color:"white"}}  onClick={()=>handleSubmit()}>Guardar</button>
